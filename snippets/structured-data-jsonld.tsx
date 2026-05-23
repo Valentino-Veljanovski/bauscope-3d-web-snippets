@@ -1,5 +1,5 @@
 /**
- * JSON-LD Structured Data — LocalBusiness schema
+ * JSON-LD Structured Data - LocalBusiness schema
  * ==============================================
  *
  * Injects a <script type="application/ld+json"> tag with a

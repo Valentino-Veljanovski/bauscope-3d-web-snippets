@@ -101,7 +101,7 @@ export default function TypewriterOnView({
       {hasTriggered ? (
         <Typewriter text={text} speed={speed} delay={delay} />
       ) : (
-        // Invisible placeholder of correct width — prevents CLS
+        // Invisible placeholder of correct width - prevents CLS
         // when the typewriter starts.
         <span className="opacity-0">{text}</span>
       )}

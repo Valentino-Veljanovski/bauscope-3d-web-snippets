@@ -3,11 +3,11 @@
 Three coordinated pieces give a Next.js 15 site solid SEO without
 adding any third-party dependencies:
 
-1. **Per-route metadata** — `metadata` exports for title, description,
+1. **Per-route metadata** - `metadata` exports for title, description,
    Open Graph, Twitter cards.
-2. **`sitemap.ts`** — file-based dynamic sitemap.
-3. **`robots.ts`** — file-based dynamic robots.txt.
-4. **JSON-LD structured data** — `<script type="application/ld+json">`
+2. **`sitemap.ts`** - file-based dynamic sitemap.
+3. **`robots.ts`** - file-based dynamic robots.txt.
+4. **JSON-LD structured data** - `<script type="application/ld+json">`
    in the root layout for `LocalBusiness` schema.
 
 All four are built into the Next.js App Router. No `next-sitemap`
@@ -22,10 +22,10 @@ In the App Router, every `page.tsx` and `layout.tsx` can export a
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page Title — Brand",
+  title: "Page Title - Brand",
   description: "Short, accurate description that shows in search results.",
   openGraph: {
-    title: "Page Title — Brand",
+    title: "Page Title - Brand",
     description: "Short, accurate description that shows in search results.",
     images: ["/og-image.jpg"],
     locale: "de_DE",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Page Title — Brand",
+    title: "Page Title - Brand",
     description: "Short, accurate description that shows in search results.",
     images: ["/og-image.jpg"],
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 The root layout sets the **defaults**; per-page metadata overrides
 specific fields. Useful pattern: the layout sets the brand name in
-the title template (`title: { template: "%s — Brand", default: "Brand" }`),
+the title template (`title: { template: "%s - Brand", default: "Brand" }`),
 each page just sets its own title and the brand suffix is appended
 automatically.
 
@@ -100,7 +100,7 @@ export default function robots(): MetadataRoute.Robots {
 ```
 
 Compiled to `/robots.txt`. The `sitemap` field is the absolute URL
-that `sitemap.ts` will produce — Google's crawler reads
+that `sitemap.ts` will produce - Google's crawler reads
 `robots.txt` first, finds the sitemap URL, and goes from there.
 
 **Always disallow `/api/`.** Search engines have no business
@@ -110,7 +110,7 @@ properly guarded.
 
 ## JSON-LD structured data
 
-Search engines want more than your `<title>` and `<description>` —
+Search engines want more than your `<title>` and `<description>` -
 they want machine-readable claims about who you are. JSON-LD is the
 standard format. Drop a `<script type="application/ld+json">` in
 your layout with a [`schema.org`](https://schema.org/docs/full.html)

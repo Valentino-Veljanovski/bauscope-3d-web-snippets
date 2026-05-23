@@ -16,7 +16,7 @@ for any team that already runs on Microsoft 365.
 | Rotation | Manual change in code/env | Rotate in Azure portal |
 | Sender domain | Whatever SMTP allows | The company's real domain |
 | Deliverability | Depends on relay reputation | Same as any internal email |
-| Audit trail | None — fire and forget | Sent items saved in Outlook |
+| Audit trail | None - fire and forget | Sent items saved in Outlook |
 | MFA / Conditional Access | Often blocks SMTP login | Bypassed by service principal |
 | Scopes | All-or-nothing | `Mail.Send` only |
 
@@ -27,17 +27,17 @@ The setup cost is paid once; the operational benefits are recurring.
 
 Three things have to be true before a single line of code runs:
 
-1. **Azure AD app registration exists** — created in the Azure
+1. **Azure AD app registration exists** - created in the Azure
    portal, has `Mail.Send` application permission granted (admin
    consent required), and has a client secret.
-2. **The sender mailbox is real** — a licensed Microsoft 365
+2. **The sender mailbox is real** - a licensed Microsoft 365
    mailbox in the same tenant. The app sends *as* this mailbox.
 3. **Three secrets are in env**:
-   - `AZURE_TENANT_ID` — directory ID
-   - `AZURE_CLIENT_ID` — application ID of the app registration
-   - `AZURE_CLIENT_SECRET` — the secret value (not the secret ID)
-   - `SENDER_EMAIL` — the mailbox address (e.g. `noreply@example.com`)
-   - `RECIPIENT_EMAIL` — where the form sends to
+   - `AZURE_TENANT_ID` - directory ID
+   - `AZURE_CLIENT_ID` - application ID of the app registration
+   - `AZURE_CLIENT_SECRET` - the secret value (not the secret ID)
+   - `SENDER_EMAIL` - the mailbox address (e.g. `noreply@example.com`)
+   - `RECIPIENT_EMAIL` - where the form sends to
 
 ## The token flow
 
@@ -51,7 +51,7 @@ understanding what it does:
 
 The "client credentials" flow means: no user, no browser, no consent
 prompt. The app authenticates as itself, using the secret. This is
-why the Azure permission is type "Application" (not "Delegated") —
+why the Azure permission is type "Application" (not "Delegated") -
 no user is in the loop.
 
 ## The send call
@@ -69,7 +69,7 @@ documented in Microsoft's
 The full pattern, with input validation and a styled HTML body, is
 in [`../snippets/api-contact-graph.ts`](../snippets/api-contact-graph.ts).
 
-## HTML email body — gotchas
+## HTML email body - gotchas
 
 The Graph API will deliver whatever HTML you give it, but Outlook
 and Gmail both render email HTML with a **much** smaller subset of
@@ -88,7 +88,7 @@ modern CSS than a browser. A few rules that bite:
 
 The snippet uses a defensive subset that renders correctly in
 modern Outlook + Gmail. For a richer template, look at
-[MJML](https://mjml.io) — a markup language that compiles to
+[MJML](https://mjml.io) - a markup language that compiles to
 email-safe HTML.
 
 ## Failure modes

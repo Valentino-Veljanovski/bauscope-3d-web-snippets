@@ -81,12 +81,12 @@ view as the user lands on it. See
 Three coordinated pieces:
 
 - **Per-route metadata** via `layout.tsx` and per-page `metadata`
-  exports — sets title, description, Open Graph, Twitter cards.
-- **`sitemap.ts`** — emits the XML sitemap. As pages grow, they
+  exports - sets title, description, Open Graph, Twitter cards.
+- **`sitemap.ts`** - emits the XML sitemap. As pages grow, they
   add themselves here.
-- **`robots.ts`** — emits robots.txt with allow/disallow rules,
+- **`robots.ts`** - emits robots.txt with allow/disallow rules,
   pointing to the sitemap.
-- **`StructuredData` component** — injects a JSON-LD `<script>` in
+- **`StructuredData` component** - injects a JSON-LD `<script>` in
   the root layout for `LocalBusiness` schema. Search engines and
   AI crawlers parse this for rich results.
 
@@ -105,7 +105,7 @@ nodemailer setup, but it has real benefits:
 - **No SMTP credentials in env vars.** OAuth client secret instead,
   rotatable via Azure AD.
 - **Mail goes through the company's Microsoft 365 tenant.**
-  Deliverability is the same as any internal email — recipients
+  Deliverability is the same as any internal email - recipients
   trust it because it's from a real domain account.
 - **Sent items are saved to the sender's Outlook.** A real audit
   trail in the company's existing systems, no separate database

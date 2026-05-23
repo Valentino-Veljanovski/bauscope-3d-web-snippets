@@ -7,11 +7,11 @@
  * mailbox using Azure AD's client_credentials flow.
  *
  * Why Graph over SMTP:
- *   - No SMTP credentials in env — only an Azure AD client secret,
+ *   - No SMTP credentials in env - only an Azure AD client secret,
  *     rotatable in the Azure portal without changing code.
  *   - Mail goes through your real M365 tenant; deliverability is
  *     the same as any internal email from the company domain.
- *   - Sent items are saved to the sender's Outlook — built-in
+ *   - Sent items are saved to the sender's Outlook - built-in
  *     audit trail.
  *   - Bypasses MFA / Conditional Access policies that often block
  *     password-based SMTP login.
@@ -96,7 +96,7 @@ export async function POST(request: Request) {
     // ── Build the email body ────────────────────────────────
     // Use a defensive HTML subset that renders correctly across
     // Outlook desktop, Outlook web, Gmail, and Apple Mail.
-    // Inline styles only — Outlook strips most <style> rules.
+    // Inline styles only - Outlook strips most <style> rules.
     const htmlBody = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background: #1e3a8a; color: #fff; padding: 24px; text-align: center;">

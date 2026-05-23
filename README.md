@@ -1,14 +1,14 @@
-# BauScope 3D: Frontend Patterns
+# 3D Service Landing Page Prototype: Frontend Patterns
 
 A reference for building a Next.js 15 B2B landing page with Framer
 Motion animations, Microsoft Graph email integration, and proper
 SEO setup.
 
-This repository documents the **frontend patterns** behind BauScope
-3D, a German-language B2B landing page concept I designed and built
-for an internal product idea around Matterport Pro3 scanning. The
-prototype was never deployed to production. The patterns and code
-snippets below are extracted from it, sanitized and generalized.
+This repository documents the **frontend patterns** behind a
+German-language B2B landing page concept I designed and built for an
+internal product idea around a 3D scanning service. The prototype was
+never deployed to production. The patterns and code snippets below are
+extracted from it, sanitized and generalized.
 
 > The full source code of the prototype is **not** published here.
 > This repository contains documentation and selected pattern
@@ -40,7 +40,6 @@ B2B landing page benefits from.
 ```
 .
 ├── README.md                                  ← you are here
-├── LICENSE                                    ← MIT
 ├── docs/
 │   ├── architecture.md                        ← Next.js 15 App Router shape
 │   ├── microsoft-graph-email.md               ← Azure AD client_credentials + sendMail
@@ -89,18 +88,16 @@ To be honest about scope:
 ## About
 
 Built by [Valentino Veljanovski](https://valentinoveljanovski.de),
-self-taught automation developer based in München. Companion case
-study at
-[valentinoveljanovski.de/projects/bauscope-landing](https://valentinoveljanovski.de/projects/bauscope-landing).
+automation developer based in Munich. The live case study for this
+prototype is available at
+[valentinoveljanovski.de/projects/3d-service-landing-page-prototype](https://valentinoveljanovski.de/projects/3d-service-landing-page-prototype).
 
-Companion repositories on the same profile cover related work:
+Companion repositories cover related patterns:
 
-- [`Valentino-Veljanovski/DISPO`](https://github.com/Valentino-Veljanovski/DISPO):
-  Microsoft 365 + DocuSign + AI-assisted operations
-- [`Valentino-Veljanovski/Reklamation`](https://github.com/Valentino-Veljanovski/Reklamation):
-  Slack-based case management
-- [`Valentino-Veljanovski/BauScope-Control-Center`](https://github.com/Valentino-Veljanovski/BauScope-Control-Center):
-  Role-based Slack platform with DocuSign HMAC
+- [`Valentino-Veljanovski/multi-region-dispatch-automation-pattern`](https://github.com/Valentino-Veljanovski/multi-region-dispatch-automation-pattern): Microsoft 365, DocuSign, Slack, and n8n dispatch automation patterns.
+- [`Valentino-Veljanovski/internal-reclamation-case-management-dashboard`](https://github.com/Valentino-Veljanovski/internal-reclamation-case-management-dashboard): Slack-based reclamation case management dashboard patterns.
+- [`Valentino-Veljanovski/consent-based-3d-scan-control-center`](https://github.com/Valentino-Veljanovski/consent-based-3d-scan-control-center): Role-based Slack control center for consent-first 3D scan operations.
+- [`Valentino-Veljanovski/portfolio-component-patterns`](https://github.com/Valentino-Veljanovski/portfolio-component-patterns): Personal portfolio component and hook patterns.
 
 ---
 
@@ -117,17 +114,16 @@ The code in this repository:
   credentials, internal identifiers, environment-specific
   configuration, or workflow exports.
 - Demonstrates **generic engineering patterns**: such as REST integrations,
-  webhook signature verification, OAuth credential flows, document
-  lifecycle handling, and message-queue style design, which are
-  commonly applied across the industry and freely documented in
-  vendor SDKs, RFC specifications, and other public technical material.
+  OAuth credential flows, API route design, frontend animation patterns,
+  and SEO metadata setup, which are commonly applied across the industry
+  and freely documented in vendor SDKs and public technical material.
 
 Specifically, this material is **author-original**: the patterns shown
 here were written from scratch as illustrative examples to accompany the
 author's portfolio case studies and design documentation. Any visual
 similarity to internal systems at any specific employer is incidental;
-the implementations here use only public APIs (Microsoft Graph, DocuSign
-REST, Slack Web API, etc.) in the manner those vendors document.
+the implementations here use only public APIs and frontend framework
+features in the manner those vendors document.
 
 ## Viewing Notice
 

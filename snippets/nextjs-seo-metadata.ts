@@ -1,5 +1,5 @@
 /**
- * Next.js App Router SEO files — sitemap.ts and robots.ts
+ * Next.js App Router SEO files - sitemap.ts and robots.ts
  * =======================================================
  *
  * Two file-based metadata routes the Next.js App Router compiles
@@ -9,14 +9,14 @@
  * returning structured objects. No third-party packages, no manual
  * XML, no static text files to keep in sync.
  *
- * Both files live at the top of app/ — same level as layout.tsx
+ * Both files live at the top of app/ - same level as layout.tsx
  * and page.tsx.
  *
  * Files:
  *   1. app/sitemap.ts → /sitemap.xml
  *   2. app/robots.ts  → /robots.txt
  *
- * The two examples below are paired — the robots.ts points at the
+ * The two examples below are paired - the robots.ts points at the
  * sitemap URL that sitemap.ts produces. Search engines crawl
  * robots.txt first, find the sitemap URL there, then fetch the
  * sitemap.
@@ -71,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 }
 
 /**
- * Dynamic sitemap example — combines static routes with content
+ * Dynamic sitemap example - combines static routes with content
  * fetched at build time (e.g. from a CMS or database).
  *
  * Replace this with your actual data fetch and uncomment to use:
@@ -111,7 +111,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      // Always disallow API routes — search engines have no
+      // Always disallow API routes - search engines have no
       // business firing POST requests at your form endpoints.
       disallow: ['/api/', '/admin/'],
     },
@@ -130,7 +130,7 @@ export default function robots(): MetadataRoute.Robots {
 // app/layout.tsx
 export const metadata: Metadata = {
   metadataBase: new URL('https://example.com'),
-  title: { template: '%s — Brand', default: 'Brand' },
+  title: { template: '%s - Brand', default: 'Brand' },
   description: 'Default description.',
   openGraph: {
     locale: 'de_DE',
@@ -141,7 +141,7 @@ export const metadata: Metadata = {
 
 // app/services/page.tsx
 export const metadata: Metadata = {
-  title: 'Services',  // becomes "Services — Brand" via the template
+  title: 'Services',  // becomes "Services - Brand" via the template
   description: 'What we offer.',
   openGraph: {
     images: ['/og-services.jpg'],
