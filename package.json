@@ -7,7 +7,7 @@
   "author": "Valentino Veljanovski",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Valentino-Veljanovski/BauScope-3D"
+    "url": "https://github.com/Valentino-Veljanovski/3d-service-landing-page-patterns"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
