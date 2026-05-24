@@ -1,5 +1,5 @@
 {
-  "name": "3d-service-landing-page-patterns",
+  "name": "bauscope-3d-web-snippets",
   "version": "1.0.0",
   "description": "Reference patterns from a Next.js 15 3D service landing page prototype: Microsoft Graph email, Framer Motion scroll animations, JSON-LD structured data, and App Router SEO setup.",
   "private": true,
@@ -7,7 +7,7 @@
   "author": "Valentino Veljanovski",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Valentino-Veljanovski/3d-service-landing-page-patterns"
+    "url": "https://github.com/Valentino-Veljanovski/bauscope-3d-web-snippets"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"

@@ -94,10 +94,10 @@ prototype is available at
 
 Companion repositories cover related patterns:
 
-- [`Valentino-Veljanovski/multi-region-dispatch-automation-pattern`](https://github.com/Valentino-Veljanovski/multi-region-dispatch-automation-pattern): Microsoft 365, DocuSign, Slack, and n8n dispatch automation patterns.
-- [`Valentino-Veljanovski/internal-reclamation-case-management-dashboard`](https://github.com/Valentino-Veljanovski/internal-reclamation-case-management-dashboard): Slack-based reclamation case management dashboard patterns.
-- [`Valentino-Veljanovski/consent-based-3d-scan-control-center`](https://github.com/Valentino-Veljanovski/consent-based-3d-scan-control-center): Role-based Slack control center for consent-first 3D scan operations.
-- [`Valentino-Veljanovski/valentino-veljanovski-portfolio-component-patterns`](https://github.com/Valentino-Veljanovski/valentino-veljanovski-portfolio-component-patterns): Personal portfolio component and hook patterns.
+- [`Valentino-Veljanovski/multi-region-dispatch-automation-snippets`](https://github.com/Valentino-Veljanovski/multi-region-dispatch-automation-snippets): Microsoft 365, DocuSign, Slack, and n8n dispatch automation patterns.
+- [`Valentino-Veljanovski/internal-reclamation-case-management-snippets`](https://github.com/Valentino-Veljanovski/internal-reclamation-case-management-snippets): Slack-based reclamation case management dashboard patterns.
+- [`Valentino-Veljanovski/consent-based-3d-scan-control-center-snippets`](https://github.com/Valentino-Veljanovski/consent-based-3d-scan-control-center-snippets): Role-based Slack control center for consent-first 3D scan operations.
+- [`Valentino-Veljanovski/valentino-veljanovski-portfolio-component-snippets`](https://github.com/Valentino-Veljanovski/valentino-veljanovski-portfolio-component-snippets): Personal portfolio component and hook patterns.
 
 ---
 
