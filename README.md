@@ -1,4 +1,4 @@
-# 3D Service Landing Page Prototype: Frontend Patterns
+# 3D Service Landing Page Prototype Snippets
 
 A reference for building a Next.js 15 B2B landing page with Framer
 Motion animations, Microsoft Graph email integration, and proper
