@@ -1,0 +1,30 @@
+{
+  "name": "bauscope-3d-web-snippets",
+  "version": "1.0.0",
+  "description": "Reference patterns from a Next.js 15 3D service landing page prototype: Microsoft Graph email, Framer Motion scroll animations, JSON-LD structured data, and App Router SEO setup.",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "Valentino Veljanovski",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Valentino-Veljanovski/bauscope-3d-web-snippets"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.0.0",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "framer-motion": "^11.0.0",
+    "isomorphic-fetch": "^3.0.0",
+    "next": "^15.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.0"
+  }
+}
